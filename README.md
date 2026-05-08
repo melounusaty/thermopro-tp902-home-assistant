@@ -40,9 +40,7 @@ The `tp902` folder is the custom integration itself; Home Assistant loads the in
 ## Installation
 
 1. Copy the whole `tp902` folder into `config/custom_components/` in your Home Assistant installation so the final path is `config/custom_components/tp902/`.
-2. Confirm that `manifest.json` includes the integration domain, Bluetooth-related dependencies, and `config_flow: true`, which enables setup through the Home Assistant UI.
-3. If an older YAML-based version was used before, remove any old block such as `sensor: - platform: tp902 ...` from `configuration.yaml`, because the config-entry version should not be loaded through the legacy platform method.
-4. Restart Home Assistant so it discovers the new custom integration and loads its manifest and config flow.
+2. Restart Home Assistant so it discovers the new custom integration and loads its manifest and config flow.
 
 ## Add the thermometer
 
