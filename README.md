@@ -4,6 +4,9 @@ This custom integration adds support for the ThermoPro **TP902** Bluetooth therm
 
 It uses a Home Assistant config entry, Bluetooth support, and sensor entities for Probe 1, Probe 2, and Battery.
 
+<img width="338" height="462" alt="image" src="https://github.com/user-attachments/assets/62024e71-46b7-4b86-b2ce-195670a48aca" />
+
+
 ## TP902 protocol library
 
 This integration uses the TP902 BLE protocol [library](https://github.com/petrkr/thermopro-tp902/blob/master/tp902/__init__.py) from the [`petrkr/thermopro-tp902`](https://github.com/petrkr/thermopro-tp902) project.
@@ -46,12 +49,16 @@ The `tp902` folder is the custom integration itself; Home Assistant loads the in
 
 Before adding the device, make sure the TP902 is powered on, close to a Bluetooth adapter or Bluetooth proxy that Home Assistant can use, and not currently connected to the ThermoPro mobile app, because Bluetooth connection availability affects whether Home Assistant can claim the device.
 
+Find out thermometer MAC address:
+1. Open **Settings → Bluetooth → Advertisments**.
+2. Search for TP902 and copy its MAC address
+
 Then add it in Home Assistant:
 
 1. Open **Settings → Devices & Services**.
 2. Click **Add Integration**.
 3. Search for **TP902**.
-4. Enter the thermometer Bluetooth MAC address, for example `C4:45:1C:AA:36:51`.
+4. Enter the thermometer Bluetooth MAC address, for example `A4:46:1C:AC:61:51`.
 5. Enter a friendly name such as `TP902`.
 6. Finish the setup flow.
 
@@ -59,7 +66,7 @@ The config flow stores the MAC address as the integration's unique identifier, w
 
 ## Finding the MAC address
 
-The TP902 advertises over Bluetooth and exposes the ThermoPro service UUID `1086fff0-3343-4817-8bb2-b32206336ce8`, so the MAC address can usually be found from the Home Assistant Bluetooth page, Bluetooth debug output, or a BLE scanner app while the thermometer is awake and advertising.
+The TP902 advertises over Bluetooth and exposes the ThermoPro service UUID, so the MAC address can usually be found from the Home Assistant Bluetooth page, Bluetooth debug output, or a BLE scanner app while the thermometer is awake and advertising.
 
 If the device appears in Home Assistant Bluetooth diagnostics, use the displayed address exactly as shown there.
 
@@ -73,7 +80,7 @@ Typical result:
 - Probe 2
 - Battery
 
-The battery entity may be disabled by default if `_attr_entity_registry_enabled_default = False` is used in the battery sensor class, which is appropriate for lower-priority diagnostic entities.
+The battery entity is disabled by default as `_attr_entity_registry_enabled_default = False` is used in the battery sensor class.
 
 ## Troubleshooting
 
