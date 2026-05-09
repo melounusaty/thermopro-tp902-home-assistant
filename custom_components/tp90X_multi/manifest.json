@@ -1,0 +1,10 @@
+{
+  "domain": "tp902",
+  "name": "ThermoPro TP90X",
+  "version": "0.2.2",
+  "documentation": "https://example.invalid/tp90x",
+  "dependencies": ["bluetooth", "bluetooth_adapters"],
+  "config_flow": true,
+  "codeowners": [],
+  "iot_class": "local_polling"
+}
