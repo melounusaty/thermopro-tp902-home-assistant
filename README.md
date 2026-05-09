@@ -1,8 +1,8 @@
 # ThermoPro TP90X Home Assistant Custom Integration
-[![version](https://img.shields.io/github/manifest-json/v/melounusaty/thermopro-tp90X-home-assistant?filename=custom_components%2Ftp902%2Fmanifest.json&color=slateblue)](https://github.com/melounusaty/thermopro-tp90X-home-assistant/releases/latest)
+[![version](https://img.shields.io/github/manifest-json/v/melounusaty/thermopro-tp90X-home-assistant?filename=custom_components%2Ftp90X_multi%2Fmanifest.json&color=slateblue)](https://github.com/melounusaty/thermopro-tp90X-home-assistant/releases/latest)
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?logo=homeassistantcommunitystore&logoColor=white)](https://github.com/hacs/integration)
 
-This custom integration adds support for the ThermoPro **TP90X** Bluetooth thermometer family in Home Assistant through a custom component placed in `custom_components/tp902/`.
+This custom integration adds support for the ThermoPro **TP90X** Bluetooth thermometer family in Home Assistant through a custom component placed in `custom_components/tp90X_multi/`.
 
 It currently supports:
 
@@ -62,7 +62,7 @@ Place the integration in this path inside your Home Assistant config directory:
 ```text
 config/
 └── custom_components/
-    └── tp902/
+    └── tp90X_multi/
         ├── __init__.py
         ├── manifest.json
         ├── config_flow.py
@@ -84,7 +84,7 @@ config/
             └── tp90xbase.py
 ```
 
-The `tp902` folder is the Home Assistant custom integration itself. Home Assistant loads the integration from that directory based on the integration domain and `manifest.json`.
+The `tp90X_multi` folder is the Home Assistant custom integration itself. Home Assistant loads the integration from that directory based on the integration domain and `manifest.json`.
 
 ## Installation
 
@@ -96,7 +96,7 @@ Have [HACS](https://hacs.xyz/) installed, this will allow you to update easily.
 
 ### Manual
 
-1. Copy the whole `tp902` folder into `config/custom_components/` in your Home Assistant installation so the final path is `config/custom_components/tp902/`.
+1. Copy the whole `tp90X_multi` folder into `config/custom_components/` in your Home Assistant installation so the final path is `config/custom_components/tp90X_multi/`.
 2. Restart Home Assistant so it discovers the custom integration and loads its manifest and config flow.
 3. If you are upgrading from an older TP902-only version, replace the whole folder rather than mixing old and new files.
 
