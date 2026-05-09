@@ -1,4 +1,6 @@
 # ThermoPro TP90X Home Assistant Custom Integration
+[![version](https://img.shields.io/github/manifest-json/v/melounusaty/thermopro-tp90X-home-assistant?filename=custom_components%2Ftp902%2Fmanifest.json&color=slateblue)](https://github.com/melounusaty/thermopro-tp90X-home-assistant/releases/latest)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?logo=homeassistantcommunitystore&logoColor=white)](https://github.com/hacs/integration)
 
 This custom integration adds support for the ThermoPro **TP90X** Bluetooth thermometer family in Home Assistant through a custom component placed in `custom_components/tp902/`.
 
