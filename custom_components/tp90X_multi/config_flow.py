@@ -5,7 +5,7 @@ import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.helpers.device_registry import format_mac
 
-DOMAIN = "tp902"
+DOMAIN = "tp90x_multi"
 
 MODEL_OPTIONS = {
     "TP902": "TP902",
