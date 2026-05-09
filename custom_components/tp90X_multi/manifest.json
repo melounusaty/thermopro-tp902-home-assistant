@@ -1,5 +1,5 @@
 {
-  "domain": "tp90x_multi",
+  "domain": "tp90X_multi",
   "name": "ThermoPro TP90X",
   "version": "1.0.2",
   "documentation": "https://github.com/melounusaty/thermopro-tp90X-home-assistant",
