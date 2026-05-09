@@ -18,7 +18,7 @@ from .tp90x.tp90xbase import _build_packet, _encode_temp_bcd
 
 _LOGGER = logging.getLogger(__name__)
 
-DOMAIN = "tp90x_multi"
+DOMAIN = "tp90X_multi"
 TP90X_SERVICE_UUID = TP902.SERVICE_UUID
 MODEL_MAP = {
     "TP902": TP902,
