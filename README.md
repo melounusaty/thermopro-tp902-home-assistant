@@ -88,6 +88,14 @@ The `tp902` folder is the Home Assistant custom integration itself. Home Assista
 
 ## Installation
 
+### HACS (recommended)
+
+Have [HACS](https://hacs.xyz/) installed, this will allow you to update easily.
+
+<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=melounusaty&repository=thermopro-tp90X-home-assistant&category=integration" target="_blank"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open this repository inside HACS." /></a>
+
+### Manual
+
 1. Copy the whole `tp902` folder into `config/custom_components/` in your Home Assistant installation so the final path is `config/custom_components/tp902/`.
 2. Restart Home Assistant so it discovers the custom integration and loads its manifest and config flow.
 3. If you are upgrading from an older TP902-only version, replace the whole folder rather than mixing old and new files.
