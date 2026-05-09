@@ -5,7 +5,7 @@ from homeassistant.core import HomeAssistant
 
 from .device import TP90xDevice
 
-DOMAIN = "tp902"
+DOMAIN = "tp90x_multi"
 PLATFORMS = ["sensor", "select", "switch", "number"]
 
 
