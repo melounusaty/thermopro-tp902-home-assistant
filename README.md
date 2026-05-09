@@ -53,7 +53,7 @@ For **TP904**, the integration currently provides:
 - `Units` — select entity for Celsius / Fahrenheit
 - `Alarm sound` — switch entity
 
-TP904 alarm configuration is currently treated as **experimental** and is not exposed with the same min/max controls used by TP902, because the attached TP904 library notes that some of its setting mechanism differ from the TP902 implementation.
+TP904 alarm configuration is currently treated as **experimental** and is not exposed with the same min/max controls used by TP902, because the TP904 library indicates that parts of its settings behavior differ from the TP902 implementation.
 
 ## Folder contents
 
