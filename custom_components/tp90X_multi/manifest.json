@@ -1,8 +1,8 @@
 {
   "domain": "tp902",
-  "name": "TP902",
-  "version": "0.1.1",
-  "documentation": "https://example.invalid/tp902",
+  "name": "ThermoPro TP90X",
+  "version": "0.2.2",
+  "documentation": "https://example.invalid/tp90x",
   "dependencies": ["bluetooth", "bluetooth_adapters"],
   "config_flow": true,
   "codeowners": [],
