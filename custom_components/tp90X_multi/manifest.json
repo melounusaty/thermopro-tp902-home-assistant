@@ -2,9 +2,10 @@
   "domain": "tp902",
   "name": "ThermoPro TP90X",
   "version": "0.2.2",
-  "documentation": "https://example.invalid/tp90x",
+  "documentation": "https://github.com/melounusaty/thermopro-tp90X-home-assistant",
+  "issue_tracker": "https://github.com/melounusaty/thermopro-tp90X-home-assistant/issues",
   "dependencies": ["bluetooth", "bluetooth_adapters"],
   "config_flow": true,
-  "codeowners": [],
+  "codeowners": ["@melounusaty"],
   "iot_class": "local_polling"
 }
