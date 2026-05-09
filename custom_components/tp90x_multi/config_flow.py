@@ -13,10 +13,12 @@ MODEL_OPTIONS = {
 }
 
 
-class TP902ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+class TP90XConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+    """Handle a config flow for ThermoPro TP90X devices."""
+
     VERSION = 2
 
-    async def async_step_user(self, user_input=None):
+    async def async_step_user(self, user_input: dict[str, str] | None = None):
         if user_input is not None:
             mac = format_mac(user_input["mac"])
             await self.async_set_unique_id(mac)
