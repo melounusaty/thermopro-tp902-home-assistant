@@ -1,5 +1,6 @@
 {
-  "name": "Flightradar24",
-  "homeassistant": "2023.9.3",
-  "render_readme": true
+  "name": "ThermoPro TP90X",
+  "content_in_root": false,
+  "render_readme": true,
+  "homeassistant": "2026.2.0"
 }
