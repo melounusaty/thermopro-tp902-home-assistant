@@ -11,7 +11,7 @@ It currently supports:
 
 The integration uses a Home Assistant config entry, Bluetooth support, and sensor entities for the active probe channels exposed by the selected model.
 
-<img width="882" height="962" alt="image" src="https://github.com/user-attachments/assets/26153499-e762-452b-87ae-eb834ea2f3b3" />
+<img width="849" height="975" alt="image" src="https://github.com/user-attachments/assets/37b2a435-9a5c-4ea0-810c-06221953d663" />
 
 ## TP90X protocol libraries
 
