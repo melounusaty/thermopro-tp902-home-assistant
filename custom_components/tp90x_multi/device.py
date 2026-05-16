@@ -225,6 +225,13 @@ class TP90xDevice:
         await asyncio.sleep(0.5)
         await self.async_request_status()
 
+    async def async_alarm_snooze(self) -> None:
+        await self.async_send_packet(self.protocol_cls.CMD_SNOOZE_ALARM)
+
+    async def async_backlight(self) -> None:
+        await self.async_send_packet(self.protocol_cls.CMD_BACKLIGHT_ON)
+
+
     async def async_set_alarm_range(self, channel: int, low_c: float, high_c: float) -> None:
         if not self.supports_alarm_config:
             raise HomeAssistantError(f"{self.model} alarm configuration is not supported")
